@@ -8,7 +8,7 @@ data class Item(
     val id: String,
     val etag: String,
     val selfLink: String,
-    val volumeInfo: VolumeInfo,
+    val volumeInfo: VolumeInfoX,
     val saleInfo: SaleInfo,
     val accessInfo: AccessInfo,
     val searchInfo: SearchInfo
