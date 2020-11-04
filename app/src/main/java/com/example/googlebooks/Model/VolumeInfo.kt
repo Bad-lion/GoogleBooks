@@ -5,15 +5,15 @@ import com.google.gson.annotations.SerializedName
 
 data class VolumeInfo(
     @SerializedName("title")
-    val name: String,
+    var name: String,
     @SerializedName("authors")
-    val authors: List<String>,
+    var authors: ArrayList<String>,
     @SerializedName("publisher")
-    val publisher: String,
+    var publisher: String,
     @SerializedName("description")
-    val description: String,
-    @SerializedName("pageCount")
-    val pageCount: Int,
-    @SerializedName("ratingsCount")
-    val ratingsCount: Int
+    var description: String,
+    @SerializedName("id")
+    var pageCount: Int,
+    @SerializedName("userId")
+    var ratingsCount: Int
 )
