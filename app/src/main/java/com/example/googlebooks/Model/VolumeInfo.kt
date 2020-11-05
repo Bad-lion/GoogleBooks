@@ -1,19 +1,38 @@
 package com.example.googlebooks.Model
 
-
 import com.google.gson.annotations.SerializedName
 
 data class VolumeInfo(
+
     @SerializedName("title")
-    var name: String,
+    val bookName: String,
     @SerializedName("authors")
-    var authors: ArrayList<String>,
+    val authors: ArrayList<String>,
     @SerializedName("publisher")
-    var publisher: String,
+    val publisher: String,
+    @SerializedName("publishedDate")
+    val publishedDate: String,
     @SerializedName("description")
-    var description: String,
-    @SerializedName("id")
-    var pageCount: Int,
-    @SerializedName("userId")
-    var ratingsCount: Int
+    val description: String,
+    @SerializedName("pageCount")
+    val pageCount: Int,
+//    @SerializedName("averageRating")
+//    val averageRating: Int,
+    @SerializedName("ratingsCount")
+    val ratingsCount: Int,
+    @SerializedName("imageLinks")
+    val imageLinks: ImageLinks,
+    @SerializedName("infoLink")
+    val infoLink: String,
+    @SerializedName("subtitle")
+    val subtitle: String
 )
+
+
+
+
+
+
+
+
+
